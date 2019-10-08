@@ -14,9 +14,9 @@ require('dotenv/config');
 //req.body = Acessar corpo da requisição (para criação e edição)
 //req.params = Acessar route params (para edição e delete)
 
-// var urlVirt = process.env.MONGODB_URL;
+var urlVirt = process.env.MONGODB_URL;
 
-mongoose.connect("mongodb+srv://oministack:oministack@cluster0-4eb0q.mongodb.net/semana09?retryWrites=true&w=majority", {
+mongoose.connect(urlVirt, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
