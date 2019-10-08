@@ -16,7 +16,7 @@ require('dotenv/config');
 
 // var urlVirt = process.env.MONGODB_URL;
 
-mongoose.connect(process.env.MONGODB_URL, {
+mongoose.connect("mongodb+srv://oministack:oministack@cluster0-4eb0q.mongodb.net/semana09?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
